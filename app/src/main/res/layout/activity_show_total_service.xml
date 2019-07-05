@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activites.ShowTotalServiceActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/SendMyOrder_toolbar"
+        layout="@layout/toolbar">
+
+    </include>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Constrain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50">
+
+        <TextView
+            android:id="@+id/SendMyOrder_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="180dp"
+            android:layout_marginRight="180dp"
+            android:fontFamily="@font/cairo"
+            android:gravity="center"
+            android:text="@string/OrderTitle"
+            android:textColor="@color/durban_White"
+            android:textSize="@dimen/dimen_text_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL_ShowTotalServices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Constrain"
+        android:layout_marginStart="@dimen/album_dp_10"
+        android:layout_marginTop="@dimen/album_dp_40"
+        android:layout_marginEnd="@dimen/album_dp_10">
+
+
+        <ImageView
+            android:id="@+id/ImageService_IV"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/rectangleredshape"
+            android:src="@drawable/animal_example" />
+
+        <TextView
+            android:id="@+id/ShowService_NameOnImage_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/cairo"
+            android:gravity="center"
+            android:text="@string/ServiceSelecteName"
+            android:textColor="@color/white"
+            android:textSize="@dimen/album_dp_35" />
+
+        <TextView
+            android:id="@+id/ShowService_ServiceNotes_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ImageService_IV"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/album_dp_15"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="fsjnklfksfdskdfndskfdsfdsfdsfsdfncnvfdgkdfgfdkgndfkndfdngfdngnfdgfndkgdfngkdfngkdfmvcm5565bgffgdfgdsf/*fdsf"
+            android:textColor="@color/black"
+            android:textSize="@dimen/album_sp_18" />
+
+        <TextView
+            android:id="@+id/ShowTotalServices_Kilo_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ShowService_ServiceNotes_TV"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="@dimen/album_dp_30"
+            android:text="@string/Kilo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_text_25" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ShowTotalServices_Kilo_TV"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="@dimen/album_dp_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ShowTotsalServices_1_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:text="@string/size1"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dimen_text_25" />
+
+            <TextView
+                android:id="@+id/ShowTotsalServices_2_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="@dimen/album_dp_2"
+                android:text="@string/size2"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dimen_text_25" />
+
+            <TextView
+                android:id="@+id/ShowTotsalServices_3_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="@dimen/album_dp_2"
+                android:text="@string/size3"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dimen_text_25" />
+
+            <Button
+                android:id="@+id/ShowTotalServices_BT_Requset"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="@dimen/album_dp_80"
+                android:layout_marginTop="@dimen/album_dp_15"
+                android:layout_marginEnd="@dimen/album_dp_80"
+                android:background="@drawable/red_button"
+                android:text="@string/request"
+                android:textColor="@color/white"
+                android:textSize="@dimen/album_dp_30" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ShowTotalServices_Back_IB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/back_icon" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+</ScrollView>
