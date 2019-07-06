@@ -2,91 +2,80 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginStart="@dimen/start_end"
-    android:layout_marginTop="@dimen/album_dp_10"
+    android:layout_marginTop="10dp"
     android:layout_marginEnd="@dimen/start_end"
     android:background="@drawable/rectangleshape">
 
-    <ImageView
-        android:id="@+id/Items_Crad_IV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/animal_example" />
 
-    <TextView
-        android:id="@+id/items-card_deatilsinTV"
-        android:layout_width="330dp"
-        android:layout_height="110dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="60dp"
-        android:background="@drawable/red_button"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:textSize="@dimen/dimen_text_20"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
 
-    <ImageButton
-        android:id="@+id/Items_Card_DeleteItem_IB"
-        android:layout_width="@dimen/album_dp_40"
-        android:layout_height="@dimen/album_dp_40"
-        android:layout_marginStart="328dp"
-        android:layout_marginLeft="328dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:src="@drawable/close_icon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="16dp" />
+        <ImageView
+            android:id="@+id/Items_Card_IV_MainPic"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_text_20"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:background="@drawable/rectangleredshape"
+            android:src="@drawable/animal_example2" />
 
-    <ImageView
-        android:id="@+id/Items_Card_EditItem_IB"
-        android:layout_width="@dimen/album_dp_40"
-        android:layout_height="@dimen/album_dp_40"
-        android:layout_marginEnd="328dp"
-        android:layout_marginRight="328dp"
-        android:src="@drawable/editicon"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="81dp" />
+        <TextView
+            android:id="@+id/items-card_deatilsinTV"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/Items_Card_IV_MainPic"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/red_button"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_text_20" />
 
-    <TextView
-        android:id="@+id/Card_Items_OrderName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginLeft="156dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/cardOrder"
-        android:textColor="@color/white"
-        android:textSize="@dimen/durban_dp_30"
-        app:layout_constraintBottom_toTopOf="@+id/items-card_deatilsinTV"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/Items_Card_TV_TotalCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Items_Card_IV_MainPic"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:gravity="center"
+            android:text="@string/TotalCard"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
 
 
-    <TextView
-        android:id="@+id/CardItems_Adder_TV"
-        android:layout_width="151dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="40dp"
-        android:gravity="center"
-        android:text="السعر الكلي"
-        android:textColor="@color/white"
-        android:textSize="@dimen/album_dp_20"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/Card_Items_OrderName"
-        app:layout_constraintStart_toStartOf="@+id/Card_Items_OrderName"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.842" />
+        <ImageView
+            android:id="@+id/ItemsCard_Close_IV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/close_icon" />
 
 
+        <ImageView
+            android:id="@+id/ItemsCard_Edit_IV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/dimen_text_20"
+            android:src="@drawable/editicon"
+
+            />
+    </RelativeLayout>
 
 
-
-</android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>

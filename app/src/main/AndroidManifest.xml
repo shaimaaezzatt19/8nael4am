@@ -4,12 +4,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/pnglogo"
+        android:icon="@drawable/jpglogo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activites.KnewUsActivity"></activity>
+        <activity android:name=".ui.activites.OurWayStyleActivity"></activity>
+        <activity android:name=".ui.activites.ConnectUsActivity" />
+        <activity android:name=".ui.activites.KnewUsActivity" />
         <activity android:name=".ui.activites.BackgroundActivity" />
         <activity android:name=".ui.activites.ServicesActivity" />
         <activity android:name=".ui.activites.OrderTotalService" />

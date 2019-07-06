@@ -51,8 +51,8 @@
 
     //Item of card
     <string name="cardOrder">حاشي</string>
-    <string name="aftertibs">اجمالي قبل الضريبة 300</string>
-    <string name="adder">القيمة المضافة 100</string>
+    <!--<string name="aftertibs">اجمالي قبل الضريبة 300</string>-->
+    <!--<string name="adder">القيمة المضافة 100</string>-->
     <string name="TotalCard">الاجمالي الكلي 500</string>
 
     //ConfirmRequest
@@ -80,7 +80,7 @@
     //card after ordering
     <string name="ShoppingCart">سلة الشراء</string>
     <string name="OrderDone">تم الطلب </string>
-    <string name="Timer">5:00</string>
+    <string name="Timer">1:00</string>
     <string name="Cancle">إلغاء</string>
 
 
@@ -104,9 +104,22 @@
     <string name="request">اطلب</string>
 
     //Dialog
-
     <string name="Dialog">قيم الآن</string>
     <string name="DialogDone">تم إضافة الطلب إلى السلةاذهب لاتمام الطلب </string>
+
+
+    //My Way
+    <string name="MyWayOne"> للتميز عنوان وعنوان تميزنا ذبائحُنا ونكتفي بأننا التطبيق والاسم الأول في عالم اللحوم على مستوى الخليج</string>
+    <string name="MyWayTWO">يقوم العميل بطلب الذبيحة من شاشة الطلبات</string>
+    <string name="MyWayTthree">دفع التكلفة عند الاستلام</string>
+    <string name="MyWayFour">يتم التواصل مع العميل لانهاء الطلب وتأكيده وأخذ ملاحظاته</string>
+    <string name="MyWayFive">استلام الطلب في الوقت المتفق عليه مع العميل</string>
+    <string name="MyWaySix">نقوم بجميع أنواع التقطيع والفرم</string>
+    <string name="MyWaySeven">نقدم لك اللحوم في أطباق أو أكياس أو أكياس مفرغ منها الهواء</string>
+    <string name="MyWayEight">التوصيل بسيارات مبردة</string>
+    <string name="MyWayNine">الذبح تحت اشراف طبي </string>
+    <string name="MyWayTeen">في حالة وجود عيب في الذبيحة يتم تعويض العميل بما يرغب </string>
+    <string name="MyWayEleven">رضائكم غايتنا ومحبتكم دعم لنا </string>
 
 
 </resources>

@@ -13,7 +13,8 @@ import com.khatab.a8nael4am.R;
 public class MainActivity extends AppCompatActivity {
 
     private static final String VIDEO_SAMPLE = "tacoma_narrows";
-    private final int splash_Display_Length = 6000;
+    private final int splash_Display_Length = 3000;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
